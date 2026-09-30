@@ -22,6 +22,127 @@ OctoAcme follows a **7-phase project lifecycle** grounded in customer value, ite
 - **Data-informed**: Measure impact and iterate based on evidence
 - **Psychological safety**: Encourage feedback and learning
 
+## Process Overview
+
+### 1. Project Initiation
+Initiate a project by confirming business need, identifying stakeholders, and defining success metrics. This phase establishes the foundation for all subsequent work through the creation of a lightweight Project One-pager.
+
+**Key Deliverables:**
+- Project One-pager (Problem, Goal, Success Metrics)
+- Stakeholder list & communication plan
+- High-level timeline and key milestones
+- Initial risk list
+- Resource needs and rough effort estimate
+
+**Decision Gate:** Move to planning when success metrics are clear, stakeholders align on priority, and team availability is confirmed.
+
+### 2. Project Planning
+Transform approved initiatives into actionable plans and backlog for delivery. Break work into shippable increments, estimate scope, and identify dependencies.
+
+**Key Activities:**
+- Kickoff meeting with stakeholders and delivery team
+- Create prioritized backlog with acceptance criteria
+- Estimate scope (T-shirt sizing or story points)
+- Define Definition of Done (DoD)
+- Identify dependencies and integration points
+- Create release plan and milestone map
+
+**Artifacts:**
+- Prioritized backlog with acceptance criteria
+- Release timeline and milestones
+- Risk Register
+- Test plan / QA approach
+
+### 3. Execution & Tracking
+Manage day-to-day execution and track progress toward project milestones. Maintain team rhythm through standups, demos, and regular risk review.
+
+**Team Rhythm:**
+- Daily standups (15 min) – focus on progress, blockers, dependencies
+- Weekly delivery sync – show progress, updates, and flagged risks
+- Demo/Review at the end of each sprint or milestone
+
+**Quality Standards:**
+- Unit tests for new logic
+- Integration tests where applicable
+- End-to-end smoke tests for critical flows before release
+- Security scanning in CI
+- Manual QA for feature acceptance when needed
+
+**Blocker Escalation:**
+- Level 1: Team-level triage in daily standup
+- Level 2: PM escalates to Product Lead and dependent teams
+- Level 3: Sponsor-level escalation for business-impacting issues
+
+### 4. Risk Management & Communication
+Identify, assess, and mitigate risks throughout the project lifecycle. Maintain transparent communication with stakeholders through regular updates and escalations.
+
+**Risk Register:** Track ID, Description, Impact, Likelihood, Owner, Mitigation plan, and Status
+
+**Risk Lifecycle:**
+- Identify: during planning and ongoing execution
+- Assess: estimate impact and likelihood
+- Mitigate: reduce via actions and contingency plans
+- Monitor: review at weekly syncs and update status
+
+**Stakeholder Communication:**
+- Weekly status updates (Progress, Next Steps, Risks & Blockers, Asks/Decisions)
+- Incident communication and post-incident retrospectives
+- Clear escalation paths: Team → PM → Product Lead → Sponsor
+
+### 5. Release & Deployment
+Standardize how OctoAcme releases features to production to reduce risk and improve observability.
+
+**Release Types:**
+- Patch: hotfixes addressing critical production issues
+- Minor: incremental features and improvements
+- Major: significant functionality or breaking changes
+
+**Pre-Release Requirements:**
+- All acceptance criteria met and PRs merged
+- Passing CI and security scans
+- Release notes drafted
+- Rollback / mitigation plan documented
+- Smoke tests prepared
+
+**Deployment Process:**
+- Deploy to staging and run smoke tests
+- Deploy to production (automated pipeline preferred)
+- Run post-deploy verifications
+- Announce release to stakeholders and support
+
+### 6. Retrospective & Continuous Improvement
+Capture learnings and convert them into actionable improvements after each sprint, release, or important milestone.
+
+**Retrospective Structure:**
+- What went well
+- What could be improved
+- Action items (owner, due date)
+- Follow-up on previous action items
+
+**Tracking Improvements:**
+- Add action items to project backlog or issues with clear owners and timelines
+- Review outstanding actions in weekly PM sync
+- Measure impact of action items
+
+### 7. Roles & Personas
+Understand the core roles and responsibilities within OctoAcme project teams.
+
+**Core Roles:**
+- **Project Manager (PM)**: Coordinates delivery, manages schedules, risks, and communications
+- **Product Manager (PdM)**: Defines outcomes, prioritizes backlog, and measures success
+- **Developers**: Implement features, collaborate on design and testability
+- **QA/Testing**: Validate quality and acceptance criteria
+- **Stakeholders**: Provide inputs and approvals
+
+For detailed role descriptions and responsibilities, see the Roles & Personas documentation.
+
+## Communication Cadence
+
+- **Daily**: Team standups (15 min) – blockers, progress, dependencies
+- **Weekly**: PM + PdM sync, delivery team syncs, risk review
+- **Monthly**: Stakeholder updates
+- **Ad-hoc**: Escalations and incident communication
+
 ## Documentation Index
 
 ### Project Foundations
@@ -35,13 +156,6 @@ OctoAcme follows a **7-phase project lifecycle** grounded in customer value, ite
 - [Risk Management & Communication](octoacme-risks-and-communication.md) – Identify and mitigate risks, stakeholder updates
 - [Release & Deployment](octoacme-release-and-deployment.md) – Standardized release procedures and rollback playbooks
 - [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md) – Capture learnings and drive improvements
-
-## Communication Cadence
-
-- **Daily**: Team standups (15 min) – blockers, progress, dependencies
-- **Weekly**: PM + PdM sync, delivery team syncs, risk review
-- **Monthly**: Stakeholder updates
-- **Ad-hoc**: Escalations and incident communication
 
 ## Getting Started
 
